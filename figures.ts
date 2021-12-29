@@ -78,7 +78,7 @@ function triangleArea(base:number, b:number, c?:number): number {
  * @returns {number} - Circle perimeter
  */
 function circlePerimeter(diameter:number):number {
-    return diameter * Math.PI
+    return diameter * Math.PI;
 }
 
 /**
@@ -88,5 +88,5 @@ function circlePerimeter(diameter:number):number {
  * @returns {number} - Circle area
  */
 function circleArea(radious:number):number {
-    return Math.PI * Math.pow(radious,2)
+    return Math.PI * Math.pow(radious,2);
 }
