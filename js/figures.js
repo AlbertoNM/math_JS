@@ -87,22 +87,18 @@ function circleArea(radious) {
 
 
 // interaction with HTML
-function calculateSquarePerimeter(){
-    
-    const input = document.getElementById('squareSide');
-    const value = input.value;
-
-    const perimeter = squarePerimeter(value);
-    alert(perimeter);
-
-}
-
-function calculateSquareArea(){
+function squareResults(){
     
     const input = document.getElementById('squareSide');
     const value = input.value;
 
     const area = squareArea(value);
-    alert(area);
-    
+    const perimeter = squarePerimeter(value);
+
+    const resultPerimeter = document.getElementById('resultPerimeter');
+    resultPerimeter.innerText = `Perimeter: ${perimeter}cm` 
+
+    const resultArea = document.getElementById('resultArea');
+    resultArea.innerText = `Area: ${area}cm^2`;
+
 }

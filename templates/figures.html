@@ -11,14 +11,15 @@
         <h1>Geometric figures</h1>
     </header>
     <section>
-        <h2>Square area or perimeter</h2>
+        <h2>Square</h2>
         <form>
             <label for="squareSide">Type a side of the square</label>
             <input id="squareSide" type="number">
-            <button type="button" onclick="calculateSquarePerimeter()">Calculate perimeter</button>
-            <button type="button" onclick="calculateSquareArea()">Calculate area</button>
+            <button type="button" onclick="squareResults()">Calculate properties</button>
+            <p id="resultPerimeter"></p>
+            <p id="resultArea"></p>
         </form>
     </section>
-    <script src="./figures.js"></script>
+    <script src="../js/figures.js"></script>
 </body>
 </html>
