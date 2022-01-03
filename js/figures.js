@@ -40,12 +40,10 @@ function pythagoras(a = null, b = null, c = null) {
 /**
  * This function sums the three sides of the triangle
  * @param {number} a - One of the triangle sides
- * @param {number} b - One of the triangle sides
- * @param {number} c - One of the triangle sides
  * @returns {number} Triangle perimeter
  */
-function trianglePerimeter(a, b, c) {
-    return a + b + c;
+function trianglePerimeter(a) {
+    return a * 3;
 }
 
 /**
@@ -69,11 +67,11 @@ function triangleArea(base, b, c) {
 
 /**
  * This function takes the diameter and multiply it by PI 
- * @param {number} diameter - The circle diameter 
+ * @param {number} radious - The circle radious 
  * @returns {number} Circle perimeter
  */
-function circlePerimeter(diameter) {
-    return diameter * Math.PI;
+function circlePerimeter(radious) {
+    return (radious * 2) * Math.PI;
 }
 
 /**
@@ -87,18 +85,70 @@ function circleArea(radious) {
 
 
 // interaction with HTML
+
+/**
+ * This function returns the square properties in figures.html
+ */
 function squareResults(){
     
+    // Getting value side
     const input = document.getElementById('squareSide');
     const value = input.value;
 
-    const area = squareArea(value);
+    // Calculating properties
     const perimeter = squarePerimeter(value);
+    const area = squareArea(value);
 
-    const resultPerimeter = document.getElementById('resultPerimeter');
-    resultPerimeter.innerText = `Perimeter: ${perimeter}cm` 
+    // Putting the results in figures.html
+    const resultPerimeter = document.getElementById('squareResultPerimeter');
+    resultPerimeter.innerText = `Perimeter: ${perimeter} cm`;
 
-    const resultArea = document.getElementById('resultArea');
-    resultArea.innerText = `Area: ${area}cm^2`;
+    const resultArea = document.getElementById('squareResultArea');
+    resultArea.innerText = `Area: ${area} cm^2`;
+
+}
+
+/**
+ * This function returns the triangle properties in figures.html
+ */
+function triangleResults() {
+    
+    // Getting value side
+    const input = document.getElementById('triangleSide');
+    const value = input.value;
+
+    // Calculating propierties 
+    const perimeter = trianglePerimeter(value);
+    const height = pythagoras(value/2, null, value); // Calculating triangle height
+    const area = triangleArea(value, height);
+
+    // Putting the result in figures.html
+    const resultPerimeter = document.getElementById('triangleResultPerimeter');
+    resultPerimeter.innerText = `Perimeter: ${perimeter} cm`;
+
+    const resultArea = document.getElementById('triangleResultArea');
+    resultArea.innerText = `Area: ${area} cm^2`; 
+    
+}
+
+/**
+ * This function returns the circle properties in figures.html
+ */
+function circleResults() {
+    
+    // Getting value side
+    const input = document.getElementById('circleSide');
+    const value = input.value;
+
+    // Calculating properties
+    const perimeter = circlePerimeter(value);
+    const area = circleArea(value);
+
+    // Putting the results in figures.html
+    const resultPerimeter = document.getElementById('circleResultPerimeter');
+    resultPerimeter.innerText = `Perimeter: ${perimeter} cm`;
+
+    const resultArea = document.getElementById('circleResultArea');
+    resultArea.innerText = `Area: ${area} cm^2`;
 
 }
