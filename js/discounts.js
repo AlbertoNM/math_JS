@@ -1,10 +1,10 @@
 // Discount function
 
 /**
- * This function returns the final price of a discounted product
- * @param {number} price - Product price
- * @param {number} discount - Product discount
- * @returns The discounted price
+ * This function returns the final price of a discounted product.
+ * @param {number} price - Product price.
+ * @param {number} discount - Product discount.
+ * @returns The discounted price.
  */
 function discount(price, discount) {
     
@@ -18,22 +18,22 @@ function discount(price, discount) {
 // HTML interaction
 
 /**
- * This function returns the final price in discounts.html
+ * This function returns the final price in discounts.html.
  */
 function priceDiscount() {
 
-    // Getting price
+    // Getting price.
     const inputPrice = document.getElementById('inputPrice');
     const price = inputPrice.value;
 
-    // Getting discount
+    // Getting discount.
     const inputDiscount = document.getElementById('inputDiscount');
     const discountP = inputDiscount.value;
 
-    // Calculating discount
+    // Calculating discount.
     const finalPrice = discount(price, discountP);
 
-    // Putting the final price in discounts.html
+    // Putting the final price in discounts.html.
     const result = document.getElementById('result');
     result.innerText = `$${finalPrice}`;
 
