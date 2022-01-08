@@ -46,3 +46,19 @@ function median(list){
     }
     
 }
+
+// Trend
+
+
+function trend(list) {
+
+    const countList = {};
+
+    list.map((element) => countList[element] = countList[element] ? countList[element] + 1 : 1);  
+
+    const listArray = Object.entries(countList).sort((a, b) => a[1] - b[1]);
+
+    const trend = listArray[listArray.length - 1];
+    return trend;
+
+}
