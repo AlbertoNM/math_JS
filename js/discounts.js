@@ -14,27 +14,3 @@ function discount(price, discount) {
     
     return finalPrice;
 }
-
-// HTML interaction
-
-/**
- * This function returns the final price in discounts.html.
- */
-function priceDiscount() {
-
-    // Getting price.
-    const inputPrice = document.getElementById('inputPrice');
-    const price = inputPrice.value;
-
-    // Getting discount.
-    const inputDiscount = document.getElementById('inputDiscount');
-    const discountP = inputDiscount.value;
-
-    // Calculating discount.
-    const finalPrice = discount(price, discountP);
-
-    // Putting the final price in discounts.html.
-    const result = document.getElementById('result');
-    result.innerText = `$${finalPrice}`;
-
-}
