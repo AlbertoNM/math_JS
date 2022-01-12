@@ -10,9 +10,25 @@
     <header>
         <h1>Statistics</h1>
     </header>
-    <h2>Average</h2>
-    <h2>Median</h2>
-    <h2>Trend</h2>
+    <body>
+        <form action="">
+            <h2>Adds a number to the list</h2>
+            <input type="number" id="number">
+            <button onclick="addNumber()" type="button" step="any">+</button>
+        </form>
+        <div>
+            <ul id="numbers">
+
+            </ul>
+        </div>
+        <div>
+            <button type="button" onclick="basicStatistics()">Basic statistics</button>
+            <p id="average">Average:</p>
+            <p id="median">Median:</p>
+            <p id="trend">Trend:</p>
+        </div>
+    </body>
     <script src="../js/statistics.js"></script>
+    <script src="../main.js"></script>
 </body>
 </html>

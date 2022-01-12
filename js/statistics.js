@@ -1,3 +1,5 @@
+const numberList = []
+
 // Average
 
 /**
@@ -49,13 +51,17 @@ function median(list){
 
 // Trend
 
-
+/**
+ * This function takes a list and analize the value that appears most in the list.
+ * @param {[number]} list - Number list.
+ * @returns {number} The value that appears most in the list.
+ */
 function trend(list) {
 
     const countList = {};
 
     list.map((element) => countList[element] = countList[element] ? countList[element] + 1 : 1);  
-
+    
     const listArray = Object.entries(countList).sort((a, b) => a[1] - b[1]);
 
     const trend = listArray[listArray.length - 1];

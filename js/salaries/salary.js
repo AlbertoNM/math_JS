@@ -1,97 +1,33 @@
+class Person{
+    
+    static counter = 0;
 
-const mexico = [];
+    constructor(name, salary){
+        this._name = name;
+        this._salary = salary;
+        this._id = ++Person.counter;
+    }
 
-mexico.push({
-  name: "Camila",
-  salary: 500,
-});
+    get id() {
+        return this._id;
+    }
 
-mexico.push({
-  name: "Nath",
-  salary: 1500,
-});
+    get name() {
+        return this._name;
+    }
 
-mexico.push({
-  name: "Luisa",
-  salary: 1800,
-});
+    get salary() {
+        return this._salary;
+    }
 
-mexico.push({
-  name: "Laura",
-  salary: 1000,
-});
+    set name(name) {
+        this._name = name;
+    }
 
-mexico.push({
-  name: "Daniela",
-  salary: 2200,
-});
+    set salary(salary) {
+        this._salary = salary;
+    }
 
-mexico.push({
-  name: "Esperancita",
-  salary: 200,
-});
+}
 
-mexico.push({
-  name: "Carla",
-  salary: 500,
-});
-
-mexico.push({
-  name: "Antonieta",
-  salary: 1500,
-});
-
-mexico.push({
-  name: "Alicia",
-  salary: 1300,
-});
-
-mexico.push({
-  name: "Ana",
-  salary: 2400,
-});
-
-mexico.push({
-  name: "Julia",
-  salary: 3400,
-});
-
-mexico.push({
-  name: "Rosa",
-  salary: 400,
-});
-
-mexico.push({
-  name: "Angélica",
-  salary: 400,
-});
-
-mexico.push({
-  name: "Tatiana",
-  salary: 400,
-});
-
-mexico.push({
-  name: "Lorena",
-  salary: 600,
-});
-
-mexico.push({
-  name: "Carolina",
-  salary: 1600,
-});
-
-mexico.push({
-  name: "Fernanda",
-  salary: 2600,
-});
-
-mexico.push({
-  name: "Nora",
-  salary: 1000,
-});
-
-mexico.push({
-  name: "Gisselle",
-  salary: 2000,
-});
+const people = [];
