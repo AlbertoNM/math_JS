@@ -1,5 +1,8 @@
+
+// Object
 class Person{
     
+    // object id to delete the object.
     static counter = 0;
 
     constructor(name, salary){
@@ -30,4 +33,5 @@ class Person{
 
 }
 
+// List of the type persons
 const people = [];

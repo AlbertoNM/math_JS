@@ -1,0 +1,37 @@
+/* Standar things */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    text-decoration: none;
+}
+
+/* Styles */
+
+/* header */
+
+.header{
+    text-align: center;
+    padding: 0 10%;
+}
+
+/*  */
+
+/* Body */
+.container {
+    margin: 0 10%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__option {
+    margin: 5rem;
+}
