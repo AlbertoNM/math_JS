@@ -1,3 +1,17 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+/* Vars */
+
+:root {
+    --backColor: #022c43;
+    --backColor2: #115173;
+    --titleFont: 'Work Sans', sans-serif;
+    --mainFont: 'Quicksand', sans-serif;;
+}
+
 /* Standar things */
 
 * {
@@ -9,7 +23,6 @@
 
 html {
     font-size: 62.5%;
-    text-decoration: none;
 }
 
 /* Styles */
@@ -18,12 +31,30 @@ html {
 
 .header{
     text-align: center;
-    padding: 0 10%;
+    padding: 2.5% 10%;
+    background-color: var(--backColor);
+}
+
+.header__title{
+    font-size: 4rem;
+    color: aliceblue;
+    font-family: var(--titleFont);
+}
+
+.header__subtitle {
+    font-size: 2rem;
+    color: aliceblue;
+    font-family: var(--mainFont);
 }
 
 /*  */
 
 /* Body */
+
+.body {
+    background-color: var(--backColor2);
+}
+
 .container {
     margin: 0 10%;
     display: flex;
@@ -32,6 +63,29 @@ html {
     justify-content: center;
 }
 
-.container__option {
-    margin: 5rem;
+.container__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: #ffd700;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.container__box_item {
+    font-size: 2rem;
+    margin: 1rem;
+    font-family: var(--mainFont);
+    text-decoration: none;
+    color: var(--backColor);
+}
+
+.svg_image {
+    width: 6rem;
+    height: 6rem;
 }
