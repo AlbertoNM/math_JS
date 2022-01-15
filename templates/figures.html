@@ -4,42 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mobile.css">
     <title>Geometric Figures</title>
 </head>
 <body>
-    <header>
-        <h1>Geometric figures</h1>
+    <header class="header">
+        <h1 class="header__title">Geometric figures</h1>
     </header>
-    <section>
-        <h2>Square</h2>
-        <form>
-            <label for="squareSide">Type a side of the square</label>
-            <input id="squareSide" type="number">
-            <button type="button" onclick="squareResults()">Calculate properties</button>
-            <p id="squareResultPerimeter"></p>
-            <p id="squareResultArea"></p>
-        </form>
-    </section>
-    <section>
-        <h2>Triangle</h2>
-        <form>
-            <label for="triangleSide">Type a side of the equilateral triangle</label>
-            <input id="triangleSide" type="number">
-            <button type="button" onclick="triangleResults()">Calculate properties</button>
-            <p id="triangleResultPerimeter"></p>
-            <p id="triangleResultArea"></p>
-        </form>
-    </section>
-    <section>
-        <h2>Circle</h2>
-        <form>
-            <label for="circleSide">Type the circle radious</label>
-            <input id="circleSide" type="number">
-            <button type="button" onclick="circleResults()">Calculate properties</button>
-            <p id="circleResultPerimeter"></p>
-            <p id="circleResultArea"></p>
-        </form>
-    </section>
+    <main class="main">
+        <div class="container">
+            <section class="container__box">
+                <h2 class="container__box_title">Square</h2>
+                <form class="container__box_form">
+                    <label class="box--item" for="squareSide">Type a side of the square</label>
+                    <input class="form_input  box--item" id="squareSide" type="number">
+                    <button type="button" onclick="squareResults()" class="form_button  box--item">Calculate properties</button>
+                    <p class="box--item" id="squareResultPerimeter">Perimeter:</p>
+                    <p class="box--item" id="squareResultArea">Area:</p>
+                </form>
+            </section>
+            <section class="container__box">
+                <h2 class="container__box_title">Triangle</h2>
+                <form class="container__box_form">
+                    <label class="box--item" for="triangleSide">Type a side of the equilateral triangle</label>
+                    <input class="form_input  box--item" id="triangleSide" type="number">
+                    <button type="button" onclick="triangleResults()" class="form_button  box--item">Calculate properties</button>
+                    <p class="box--item" id="triangleResultPerimeter">Perimeter:</p>
+                    <p class="box--item" id="triangleResultArea">Area:</p>
+                </form>
+            </section>
+            <section class="container__box">
+                <h2 class="container__box_title">Circle</h2>
+                <form class="container__box_form">
+                    <label class="box--item" for="circleSide">Type the circle radious</label>
+                    <input class="form_input  box--item" id="circleSide" type="number">
+                    <button type="button" onclick="circleResults()" class="form_button  box--item">Calculate properties</button>
+                    <p class="box--item" id="circleResultPerimeter">Perimeter:</p>
+                    <p class="box--item" id="circleResultArea">Area:</p>
+                </form>
+            </section>
+        </div>
+    </main>
     <script src="../js/figures.js"></script>
     <script src="../main.js"></script>
 </body>

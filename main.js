@@ -15,10 +15,10 @@ function squareResults(){
 
     // Putting the results in figures.html.
     const resultPerimeter = document.getElementById('squareResultPerimeter');
-    resultPerimeter.innerText = `Perimeter: ${perimeter} cm`;
+    resultPerimeter.innerText = `Perimeter: ${perimeter.toFixed(2)} cm`;
 
     const resultArea = document.getElementById('squareResultArea');
-    resultArea.innerText = `Area: ${area} cm^2`;
+    resultArea.innerText = `Area: ${area.toFixed(2)} square cm`;
 
 }
 
@@ -38,10 +38,10 @@ function triangleResults() {
 
     // Putting the result in figures.html.
     const resultPerimeter = document.getElementById('triangleResultPerimeter');
-    resultPerimeter.innerText = `Perimeter: ${perimeter} cm`;
+    resultPerimeter.innerText = `Perimeter: ${perimeter.toFixed(2)} cm`;
 
     const resultArea = document.getElementById('triangleResultArea');
-    resultArea.innerText = `Area: ${area} cm^2`; 
+    resultArea.innerText = `Area: ${area.toFixed(2)} square cm`; 
     
 }
 
@@ -60,10 +60,10 @@ function circleResults() {
 
     // Putting the results in figures.html.
     const resultPerimeter = document.getElementById('circleResultPerimeter');
-    resultPerimeter.innerText = `Perimeter: ${perimeter} cm`;
+    resultPerimeter.innerText = `Perimeter: ${perimeter.toFixed(2)} cm`;
 
     const resultArea = document.getElementById('circleResultArea');
-    resultArea.innerText = `Area: ${area} cm^2`;
+    resultArea.innerText = `Area: ${area.toFixed(2)} square cm`;
 
 }
 
@@ -85,7 +85,7 @@ function priceDiscount() {
 
     // Putting the final price in discounts.html.
     const result = document.getElementById('result');
-    result.innerText = `$${finalPrice}`;
+    result.innerText = `Discount: $${finalPrice}`;
 
 }
 

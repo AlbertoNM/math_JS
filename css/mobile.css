@@ -8,8 +8,9 @@
 :root {
     --backColor: #022c43;
     --backColor2: #115173;
+    --boxColor: #ffd700;
     --titleFont: 'Work Sans', sans-serif;
-    --mainFont: 'Quicksand', sans-serif;;
+    --mainFont: 'Quicksand', sans-serif;
 }
 
 /* Standar things */
@@ -49,9 +50,9 @@ html {
 
 /*  */
 
-/* Body */
+/* Main */
 
-.body {
+.main {
     background-color: var(--backColor2);
 }
 
@@ -63,29 +64,84 @@ html {
     justify-content: center;
 }
 
-.container__box {
+.container__box--link{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 20rem;
-    height: 20rem;
-    padding: 1rem;
-    margin: 2rem;
-    background-color: #ffd700;
-    border-radius: 1rem;
-    text-align: center;
-}
-
-.container__box_item {
     font-size: 2rem;
-    margin: 1rem;
     font-family: var(--mainFont);
     text-decoration: none;
-    color: var(--backColor);
+    color: black;
+    max-width: 20rem;
+    max-height: 20rem;
+    min-width: 20rem;
+    min-height: 20rem;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: var(--boxColor);
+    border-radius: 1rem;
+    text-align: center;
+    opacity: 80%;
+    transition: 0.5s;
 }
 
 .svg_image {
     width: 6rem;
     height: 6rem;
+}
+
+.container__box--link:hover{
+    opacity: 100%;
+}
+
+.container__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    height: 25rem;
+    width: 80vw;
+    border-radius: 1rem;
+    font-family: var(--mainFont);
+    font-size: 2rem;
+    background-color: var(--boxColor);
+}
+
+.container__box_title {
+    text-align: center;
+}
+
+.container__box_form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_input {
+    border-radius: 1rem;
+    border: none;
+    padding: 1rem;
+    height: 2rem;
+    width: 14rem;
+}
+
+.form_button {
+    border-radius: 1rem;
+    border: none;
+    color: aliceblue;
+    background-color: var(--backColor);
+    width: 13rem;
+    height: 2rem;
+    transition: 0.5s;
+}
+
+.form_button:hover {
+    background: var(--boxColor);
+    color: var(--backColor);
+}
+
+.box--item {
+    margin: 0.3rem;
 }
