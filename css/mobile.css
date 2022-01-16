@@ -1,7 +1,7 @@
 /* Imports */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 /* Vars */
 
@@ -10,7 +10,7 @@
     --backColor2: #115173;
     --boxColor: #ffd700;
     --titleFont: 'Work Sans', sans-serif;
-    --mainFont: 'Quicksand', sans-serif;
+    --mainFont: 'Open Sans', sans-serif;
 }
 
 /* Standar things */
@@ -86,13 +86,13 @@ html {
     transition: 0.5s;
 }
 
+.container__box--link:hover{
+    opacity: 100%;
+}
+
 .svg_image {
     width: 6rem;
     height: 6rem;
-}
-
-.container__box--link:hover{
-    opacity: 100%;
 }
 
 .container__box {
@@ -117,6 +117,18 @@ html {
 .container__box_form {
     display: flex;
     flex-direction: column;
+}
+
+.container__box_ul {
+    list-style: none;
+}
+
+.ul__item {
+    transition: 0.5s;
+}
+
+.ul__item:hover {
+    color: red;
 }
 
 .form_input {
