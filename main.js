@@ -97,7 +97,7 @@ function showNumberList() {
     // Make a label for each number in the list.
     let tag = '';
     for(i of numberList){
-        tag += `<li onclick="deleteItem(this)">${i}</li>`;
+        tag += `<li onclick="deleteItem(this)" class="box--item">${i}</li>`;
     }
     
     // Insert the tag in the <ul> label.
@@ -116,7 +116,7 @@ function showNumberList() {
     const trendV = trend(numberList);
 
     // Putting the values in statistics.html.
-    document.getElementById('average').innerHTML = `Average: ${averageV}`;
+    document.getElementById('average').innerHTML = `Average: ${averageV.toFixed(2)}`;
     document.getElementById('median').innerHTML = `Median: ${medianV}`;
     document.getElementById('trend').innerHTML = `Trend: ${trendV[0]}`;
 
@@ -130,7 +130,7 @@ function showPerson() {
     // Make a label for each people in the list.
     let tag = '';
     for(i of people){
-        tag += `<li onclick="deletePerson(${i.id})">${i.name}. salary: $${i.salary}</li>`;
+        tag += `<li onclick="deletePerson(${i.id})" class="box--item">${i.name}<br/> salary: $${i.salary}</li>`;
     }
     
     // Insert the tag in the <ul> label.

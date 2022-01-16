@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mobile.css">
     <title>Salaries</title>
 </head>
 <body>
-    <header>
-        <h1>Salaries</h1>
+    <header class="header">
+        <h1 class="header__title">Salaries</h1>
     </header>
-    <body>
-        <div>
-            <form action="">
-                <h2>Name</h2>
-                <input type="text" id="personName">
-                <h2>Salary</h2>
-                <input type="number" step="any" id="personSalary">
-                <button type="button" onclick="addPerson()">Send</button>
-            </form>
-            <div>
-                <ul id="nameList">
-
-                </ul>
+    <main class="main">
+        <div class="container">
+            <div class="container__box">
+                <form action="" class="container__box_form">
+                    <h3 class="box--item">Name</h3>
+                    <input type="text" id="personName" class="form_input  box--item">
+                    <h3 class="box--item">Salary</h3>
+                    <input type="number" step="any" id="personSalary" class="form_input  box--item ">
+                    <button type="button" onclick="addPerson()" class="form_button  box--item ">Send</button>
+                </form>
             </div>
+            <ul id="nameList" class="container__box"></ul>
         </div>
-    </body>
+    </main>
     <script src="../js/statistics.js"></script>
     <script src="../js/salary.js"></script>
     <script src="../main.js"></script>
