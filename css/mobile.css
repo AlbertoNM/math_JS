@@ -129,6 +129,7 @@ html {
 
 .ul__item:hover {
     color: red;
+    cursor: pointer;
 }
 
 .form_input {
@@ -156,4 +157,40 @@ html {
 
 .box--item {
     margin: 0.3rem;
+}
+
+/* Footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--backColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__title {
+    margin: 1rem;
+    font-family: var(--titleFont);
+    color: aliceblue;
+}
+
+.footer__container_links {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.link {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.5s;
+}
+
+.link:hover {
+    font-size: 1.1rem;
 }
