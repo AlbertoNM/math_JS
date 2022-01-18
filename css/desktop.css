@@ -11,7 +11,7 @@
 /* Main */
 
 .container__box--link {
-    font-size: 4rem;
+    font-size: 5rem;
     max-width: 30rem;
     max-height: 30rem;
     min-width: 30rem;
@@ -24,7 +24,7 @@
 }
 
 .container__box {
-    width: 50rem;
+    min-width: 50rem;
     min-height: 50rem;
     font-size: 4rem;
 }

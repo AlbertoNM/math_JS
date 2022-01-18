@@ -73,7 +73,7 @@ html {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: var(--mainFont);
     text-decoration: none;
     color: black;
