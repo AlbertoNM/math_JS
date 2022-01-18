@@ -141,7 +141,7 @@ html {
     border: none;
     padding: 1rem;
     height: 2rem;
-    width: 14rem;
+    width: 15rem;
 }
 
 .form_button {
@@ -149,7 +149,7 @@ html {
     border: none;
     color: aliceblue;
     background-color: var(--backColor);
-    width: 13rem;
+    width: 17rem;
     height: 2rem;
     transition: 0.5s;
 }
