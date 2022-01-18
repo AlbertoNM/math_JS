@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mobile.css">
+    <link rel="stylesheet" href="../css/mobile.css" media="screen and (min-width: 320px)" />
+    <link rel="stylesheet" href="../css/tablet.css" media="screen and (min-width: 600px)" />
+    <link rel="stylesheet" href="../css/desktop.css" media="screen and (min-width: 800px)" />
     <title>Statistics</title>
 </head>
-<body>
+<body class="body">
     
     <header class="header">
         <h1 class="header__title">Statistics</h1>
@@ -16,9 +18,10 @@
     <main class="main">
         <div class="container">
             <form class="container__box">
-                <p class="box--item">Adds a number to the list</p>
+                <p class="box--item">Adds a number to the list.</p>
                 <input type="number" id="number" class="form_input  box--item">
                 <button onclick="addNumber()" type="button" step="any" class="form_button  box--item">+</button>
+                <p class="box--item">Click the number to remove it.</p>
                 <ul id="numbers" class="container__box_ul  box--item"></ul>
             </form>
             <div class="container__box">

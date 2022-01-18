@@ -1,0 +1,42 @@
+/* Header */
+
+.header__title {
+    font-size: 5rem;
+}
+
+.header__subtitle {
+    font-size: 3rem;
+}
+
+/* Main */
+
+.container__box--link {
+    font-size: 3rem;
+}
+
+.container__box {
+    width: 50vw;
+    font-size: 3rem;
+}
+
+.form_input {
+    height: 2.5rem;
+    font-size: 2rem;
+}
+
+.form_button {
+    border-radius: 2rem;
+    font-size: 2rem;
+    height: 3rem;
+    width: 20rem;
+}
+
+/* Footer */
+
+.footer__title {
+    font-size: 2rem;
+}
+
+.link {
+    font-size: 2rem;
+}
