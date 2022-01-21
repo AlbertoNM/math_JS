@@ -13,6 +13,7 @@
     
     <header class="header">
         <h1 class="header__title">Discounts</h1>
+        <p><a href="../index.html" class="link">home</a></p>
     </header>
     
     <main class="main">
@@ -23,9 +24,8 @@
                     <label class="box--item" for="inputPrice">Price</label>
                     <input class="form_input  box--item" type="number" id="inputPrice">
                     <label class="box--item" for="inputDiscount">Discount</label>
-                    <input class="form_input  box--item" type="number" id="inputDiscount">
-                    <button class="form_button  box--item" type="button" onclick="priceDiscount()">Calculate</button>
-                    <p class="box--item" id="result">Discount:</p>
+                    <input class="form_input  box--item" type="number" id="inputDiscount" oninput="priceDiscount()">
+                    <p class="box--item" id="result">Price:</p>
                 </form>
             </div>
         </div>

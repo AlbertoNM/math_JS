@@ -85,7 +85,7 @@ function priceDiscount() {
 
     // Putting the final price in discounts.html.
     const result = document.getElementById('result');
-    result.innerText = `Discount: $${finalPrice}`;
+    result.innerText = `Price: $${finalPrice}`;
 
 }
 

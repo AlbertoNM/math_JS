@@ -13,6 +13,7 @@
     
     <header class="header">
         <h1 class="header__title">Statistics</h1>
+        <p><a href="../index.html" class="link">home</a></p>
     </header>
     
     <main class="main">
@@ -20,13 +21,12 @@
             <form class="container__box">
                 <p class="box--item">Adds a number to the list.</p>
                 <input type="number" id="number" class="form_input  box--item">
-                <button onclick="addNumber()" type="button" step="any" class="form_button  box--item">+</button>
+                <button onclick="addNumber(); basicStatistics()" type="button" step="any" class="form_button  box--item">+</button>
                 <p class="box--item">Click the number to remove it.</p>
                 <ul id="numbers" class="container__box_ul  box--item"></ul>
             </form>
             <div class="container__box">
                 <form action="" class="container__box_form">
-                    <button type="button" onclick="basicStatistics()" class="form_button  box--item">Basic statistics</button>
                     <p id="average" class="box--item">Average:</p>
                     <p id="median" class="box--item">Median:</p>
                     <p id="trend" class="box--item">Trend:</p>
